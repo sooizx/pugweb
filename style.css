@@ -9,7 +9,7 @@
     background-size: 100vw;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 900px;
+    height: calc(100vw / 2.2);
 }
 #LOGO {
     width: 300px;
@@ -36,5 +36,38 @@ nav{
     padding: 100px 0;
 }
 
+#brands{
+    text-align: center;
+    color: #58451a;
+}
 
+#brands p{
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 2;
+    opacity: 0.6;
+    letter-spacing: 6px;
+}
 
+.title-box{
+    text-align: center;
+    color: #58451a;
+}
+.title{
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+.title::before{
+    content: "＼";
+    padding-right: 20px;
+}
+
+.title::after{
+    content: "／";
+    padding-left: 20px;
+}
+
+.title-box h1 {
+    font-size: 1.6em;
+}
