@@ -71,3 +71,63 @@ nav{
 .title-box h1 {
     font-size: 1.6em;
 }
+
+#product {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+
+    grid-gap: 20px;
+
+    width: 900px;
+
+    margin: 0 auto;
+
+}
+
+#product img {
+    width: 100%;
+}
+
+.product-box a{
+    text-decoration: none;
+}
+
+.product-box h2{
+    color: #fbab13;
+    letter-spacing: 3px;
+    tab-size: 1.2em;
+
+}
+
+.product-box hr {
+    height: 2px;
+    background-color:#bdac90;
+    border: 0;
+    margin: 20px 0;
+}
+
+.product-box p {
+    color: #58451a;
+    font-style: 0.8em;
+    padding: 10px 0;
+    line-height: 1.8;
+}
+
+.btn-big {
+    display: inline-block;
+    background-color:#642200;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 80px;
+    border:2px solid #642200;
+    font-weight: 900;
+    transition: 0.6s;
+}
+
+.btn-big:hover {
+
+    background-color:transparent;
+    border: 3px solid #642200;
+    color:#642200;
+}
