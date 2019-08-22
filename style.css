@@ -19,7 +19,7 @@ body{
 }
 .link{
     float: right;
-    padding: 100px 100px;
+    padding: 40px 0x;
 }
 .link a {
     color: #fff;
@@ -36,7 +36,8 @@ body{
 nav{
     width: 70%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0;
+    text-align: left;
 }
 
 #brands{
@@ -153,4 +154,34 @@ footer #copy {
     padding-top: 50px;
     font-size: 0.5em;
     text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 1023px) {
+    #product {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+}
+ 
+@media screen and (max-width: 767px) {
+    #product {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    #brands {
+        width: 100%;
+    }
+    #brands p {
+        width: 100%;
+    }
+    #brands > img {
+        width: 100%;
+    }
+
+
 }

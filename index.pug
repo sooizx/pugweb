@@ -16,17 +16,20 @@ mixin product-box(img,tit2,text)
 html(lang="zh")
     head
         meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
         title 貍小路
         link(rel="stylesheet", href="style.css")
         link(rel="shortcut icon", href="imgs/161218_Logo_01.png", type="image/x-icon")
     body
-        div(ID="banner")
-            nav
-                img(src="imgs/Logo_01.png", alt="貍小路 LOGO" class="LOGO")
-                div(class="link")
-                    a(href="#") 最新消息
-                    a(href="#") 產品介紹
-                    a(href="#") 連絡我們
+        include nav.pug
+
+        //- div(ID="banner")
+        //-     nav
+        //-         img(src="imgs/Logo_01.png", alt="貍小路 LOGO" class="LOGO")
+        //-         div(class="link")
+        //-             a(href="#") 最新消息
+        //-             a(href="#") 產品介紹
+        //-             a(href="#") 連絡我們
         section(id="brands")
             //- h2(class="title") BRANDS
             //- h1 狸小路的堅持
@@ -56,12 +59,13 @@ html(lang="zh")
         a(href="#" class="btn-big") 觀看更多消息
         +title("CONTACT","聯絡我們")
 
-        footer
-            nav
-                img(src="imgs/Logo_01.png", alt="貍小路 LOGO" class="LOGO")
-                div(class="link")
-                    a(href="#") 最新消息
-                    a(href="#") 產品介紹
-                    a(href="#") 連絡我們
-                div(id="copy") copyright &copy; 2019 狸小路.All rights reserved
+        include footer.pug
+        //- footer
+        //-     nav
+        //-         img(src="imgs/Logo_01.png", alt="貍小路 LOGO" class="LOGO")
+        //-         div(class="link")
+        //-             a(href="#") 最新消息
+        //-             a(href="#") 產品介紹
+        //-             a(href="#") 連絡我們
+        //-         div(id="copy") copyright &copy; 2019 狸小路.All rights reserved
             
